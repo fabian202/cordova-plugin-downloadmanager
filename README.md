@@ -8,7 +8,7 @@ A Cordova plugin to download file in system's default download manager
  ## Installation
 
  ```
- cordova plugin add https://github.com/vasani-arpit/cordova-plugin-downloadmanager
+ cordova plugin add https://github.com/fabian202/cordova-plugin-downloadmanager
  ```
 
  ## How to Use 
