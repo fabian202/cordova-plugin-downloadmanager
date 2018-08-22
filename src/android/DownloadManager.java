@@ -43,7 +43,9 @@ public class DownloadManager extends CordovaPlugin {
             Uri Download_Uri = Uri.parse(message);
             android.app.DownloadManager.Request request = new android.app.DownloadManager.Request(Download_Uri);
             //Add basic authentication
-            request.addRequestHeader("Authorization", "Bearer " + token);
+            if(token != null && !token.isEmpty()) {
+                request.addRequestHeader("Authorization", "Bearer " + token);
+            }
             //Restrict the types of networks over which this download may proceed.
             request.setAllowedNetworkTypes(android.app.DownloadManager.Request.NETWORK_WIFI | android.app.DownloadManager.Request.NETWORK_MOBILE);
             //Set whether this download may proceed over a roaming connection.
