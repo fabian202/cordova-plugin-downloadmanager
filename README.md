@@ -24,6 +24,15 @@ var success = function (data) {
 cordova.plugins.DownloadManager.download("Your URL to download", success, fail);
  ```
 
+ ```
+Entra a la carpeta de android
+Y busca este archivo
+project.properties
+com.android.support:support-v4:+
+Remplazala por esta
+com.android.support:support-v4:27.1.0
+ ```
+
 ## Result
 
 ![screenshot](./screenshot/downloadplugin.gif)
